@@ -1,0 +1,220 @@
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+_:node1gtqiae5vx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "template_skos.csv" ;
+	km-dev:modelPublicationTime "1681297586367"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"skos:prefLabel\"}],[{\"columnName\":\"skos:altLabel\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"skos:prefLabel\"}],[{\"columnName\":\"skos:altLabel\"}]]" ;
+	km-dev:hasModelLabel "template_skos.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"skos:prefLabel\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2004/02/skos/core#Concept\",
+                    \"DomainId\": \"http://www.w3.org/2004/02/skos/core#Concept1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/ontologies/model/current#skos:prefLabel\",
+                    \"DomainLabel\": \"skos:Concept1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"skos:prefLabel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"skos:prefLabel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"skos:altLabel\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2008/05/skos#Concept\",
+                    \"DomainId\": \"http://www.w3.org/2004/02/skos/core#Concept1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/ontologies/model/current#skos:narrower\",
+                    \"DomainLabel\": \"skos:Concept1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"skos:altLabel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"skos:altLabel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 a rr:TriplesMap .
+
+_:node1gtqiae5vx1 km-dev:hasTriplesMap km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 .
+
+km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx2 rr:tableName "template_skos.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx1 km-dev:hasLogicalTable _:node1gtqiae5vx2 .
+
+km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 rr:logicalTable _:node1gtqiae5vx2 ;
+	rr:subjectMap _:node1gtqiae5vx3 .
+
+_:node1gtqiae5vx1 km-dev:hasSubjectMap _:node1gtqiae5vx3 .
+
+_:node1gtqiae5vx3 km-dev:isPartOfMapping _:node1gtqiae5vx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2004/02/skos/core#Concept1" ;
+	rr:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "skos:Concept1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_e0901dae-e6ff-4bb5-8875-a67c8b169fbc rr:predicate karma:skos:narrower .
+
+_:node1gtqiae5vx4 rr:column "skos:altLabel" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx1 km-dev:hasObjectMap _:node1gtqiae5vx4 .
+
+km-dev:PredicateObjectMap_e0901dae-e6ff-4bb5-8875-a67c8b169fbc rr:objectMap _:node1gtqiae5vx4 .
+
+km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 rr:predicateObjectMap km-dev:PredicateObjectMap_e0901dae-e6ff-4bb5-8875-a67c8b169fbc .
+
+km-dev:PredicateObjectMap_e0901dae-e6ff-4bb5-8875-a67c8b169fbc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0901dae-e6ff-4bb5-8875-a67c8b169fbc .
+
+km-dev:PredicateObjectMap_158a4a90-15fa-48b9-afab-b5047c491f2d rr:predicate karma:skos:prefLabel .
+
+_:node1gtqiae5vx5 rr:column "skos:prefLabel" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx1 km-dev:hasObjectMap _:node1gtqiae5vx5 .
+
+km-dev:PredicateObjectMap_158a4a90-15fa-48b9-afab-b5047c491f2d rr:objectMap _:node1gtqiae5vx5 .
+
+km-dev:TriplesMap_a6d01bd0-6bb9-496c-b507-c2b3154647f9 rr:predicateObjectMap km-dev:PredicateObjectMap_158a4a90-15fa-48b9-afab-b5047c491f2d .
+
+km-dev:PredicateObjectMap_158a4a90-15fa-48b9-afab-b5047c491f2d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gtqiae5vx1 .
+
+_:node1gtqiae5vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_158a4a90-15fa-48b9-afab-b5047c491f2d .
